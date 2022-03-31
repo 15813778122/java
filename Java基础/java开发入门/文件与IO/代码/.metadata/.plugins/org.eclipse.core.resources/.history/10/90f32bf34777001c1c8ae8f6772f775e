@@ -1,0 +1,16 @@
+package com.vince;
+
+/**
+ * 管道流测试：一个线程写入，一个线程读取
+ * @author HP
+ *
+ */
+
+public class PipedStreamDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,12 @@
+package com.vince;
+
+public class SystemRuntimeDemo {
+
+	public static void main(String[] args) {
+		System.out.println("向控制台输出");
+		System.err.println("出错了");
+		
+		// native表示由c或c++提供，java不提供
+	}
+
+}

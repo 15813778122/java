@@ -1,0 +1,26 @@
+package com.vince;
+
+/**
+ * Properties:
+ * properties可以用来配置文件
+ * javaweb javaee开发中通常会用到
+ * @author HP
+ *
+ */
+
+public class PropertiesDemo {
+
+	public static String verison = "1";
+	public static String username = "admim";
+	public static String passwod = "123";
+	
+	/**
+	 * 读取properties配置文件
+	 * @param args
+	 */
+	
+	public static void main(String[] args) {
+
+	}
+
+}

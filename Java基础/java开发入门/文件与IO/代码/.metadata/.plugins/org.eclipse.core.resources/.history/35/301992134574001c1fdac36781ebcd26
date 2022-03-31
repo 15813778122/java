@@ -1,0 +1,18 @@
+package com.vince;
+
+/**
+ * 转换流
+ * OutputStreamWriter:可以将输出的字符流转换为字节流的输出形式
+ * InputStreamReader:将输入的字节流转换为字符流输入形式
+ * @author HP
+ *
+ */
+
+public class ChangeStreamDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

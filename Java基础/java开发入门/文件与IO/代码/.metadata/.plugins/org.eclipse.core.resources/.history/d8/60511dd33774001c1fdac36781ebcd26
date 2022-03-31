@@ -1,0 +1,19 @@
+package com.vince;
+
+/**
+ * 字符流
+ * 字符输出流: Writer,对文件的操作使用子类:FileWriter
+ * 字符输出流:Reader,对文件的操作使用子类:FileReader
+ * 每次操作的单位是一个字符
+ * @author HP
+ *
+ */
+
+public class CharStreamDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

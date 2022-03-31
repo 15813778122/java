@@ -1,0 +1,21 @@
+package com.vince;
+
+/**
+ * 1.Locale类
+ * 使用此类中的构造方法来创建Locale
+ * Locale(String language)
+ * Locale(String language, String country)
+ * 通过静态方法创建Locale
+ * getDefault()
+ * @author HP
+ * 
+ */
+
+public class I18NDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

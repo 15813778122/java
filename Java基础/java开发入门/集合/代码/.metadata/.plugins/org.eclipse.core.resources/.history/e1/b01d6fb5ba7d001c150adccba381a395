@@ -1,0 +1,31 @@
+package iterator;
+
+/**
+ * 迭代器的具体实现类
+ * @author HP
+ *
+ */
+
+public class ConcreteIterator implements Iterator{
+	private MyList list = null;
+	private int index;//迭代器的指针
+	public ConcreteIterator(MyList list) {
+		this.list = list;
+	}
+	public ConcreteIterator() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	@Override
+	public boolean hasNext() {
+		if(index>=list.getSize())
+			return false
+		else return false;
+	}
+	@Override
+	public Object next() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+}

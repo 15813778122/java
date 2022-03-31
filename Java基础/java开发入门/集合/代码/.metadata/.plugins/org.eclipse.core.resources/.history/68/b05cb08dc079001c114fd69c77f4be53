@@ -1,0 +1,45 @@
+package com.vince;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.List;
+
+/**
+ * 集合的输出(迭代)
+ * @author HP
+ *
+ */
+
+public class IteratorDemo {
+	
+	//foreach(1.5后)
+	private static void foreach(Collection<Cat> c) {
+		for(Cat cat:c) {
+			System.out.println(cat);
+		}
+	}
+	
+	// iterator(1.5之前统一的迭代集合方式)
+	private static void iterator(Collection<Cat> c) {
+		Iterator<Cat> iter = c.iterator();
+		while(iter.hasNext()) {
+			System.out.println(iter.next());
+		}
+	}
+
+	public static void main(String[] args) {
+		List<Cat> list = new ArrayList<>();
+		Cat c1 = new Cat("miaomiao",5,1);
+		Cat c2 = new Cat("miaomiao1",4,1);
+		Cat c3 = new Cat("miaomiao2",6,1);
+		Cat c4 = new Cat("miaomiao3",5,1);
+		list.add(c1);
+		list.add(c2);
+		list.add(c3);
+		list.add(c4);
+		iterator(list);
+		foreach(list);
+	}
+
+}

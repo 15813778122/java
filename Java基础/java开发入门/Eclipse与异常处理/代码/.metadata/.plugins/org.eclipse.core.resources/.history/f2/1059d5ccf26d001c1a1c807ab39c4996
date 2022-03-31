@@ -1,0 +1,34 @@
+package com.vince.ex;
+
+/**
+ * 
+ * @company
+ * @author Journey
+ * @description
+ * 1、Throwable是异常的基类，分为Error和Exception,在编程中我们关注Exception
+ * 2.Exception分为编译器异常(受检)和运行期异常(非异常)
+ * 3.异常回导致程序中断，无法继续执行
+ * 4、在开发中，我们需要把可能出现异常的代码使用try语句块包裹起来
+ * 5.处理异常可以让程序保持运行状态
+ */
+
+public class ExceptionDemo {
+
+	public static void main(String[] args) {
+		div(10,2);
+	}
+	/**
+	 * 除法运算
+	 */
+	private static void div(int num1,int num2) {
+		try {
+			int result = num1/num2;
+			// alt+/
+			System.out.println("result"+result);
+		} catch(ArithmeticException e) {
+			System.out.println("除数不能为0");
+		}
+		System.out.println("程序结束");
+	}
+
+}

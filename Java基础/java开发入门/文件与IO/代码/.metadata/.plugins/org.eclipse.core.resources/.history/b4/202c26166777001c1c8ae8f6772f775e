@@ -1,0 +1,56 @@
+package com.vince;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.Properties;
+
+/**
+ * Properties:
+ * properties可以用来配置文件
+ * javaweb javaee开发中通常会用到
+ * @author HP
+ *
+ */
+
+public class PropertiesDemo {
+
+	public static String version = "1";
+	public static String username = "admim";
+	public static String password = "123";
+	
+	/**
+	 * 读取properties配置文件
+	 * @param args
+	 */
+	private static void readConfig() {
+		Properties p = new Properties();
+		try {
+			InputStream inStream = new FileInputStream("config.properties");
+			p.load(inStream);//加载文件
+			
+			// 从properties中获取数据
+			version = p.getProperty("app.version");
+			username = p.getProperty("db.username");
+			password = p.getProperty("db.password");
+			
+			inStream.close();
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+	
+	public static void main(String[] args) {
+		readConfig();
+		System.out.println(PropertiesDemo.version);
+		System.out.println(PropertiesDemo.username);
+		System.out.println(PropertiesDemo.password);
+	}
+
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	   http://www.springframework.org/schema/beans/spring-beans.xsd">
+		<!-- 对于一个xml文件如果作为框架的配置文件，需要遵守框架的配置准则 -->
+		<!-- 通常一个框架为了让开发者能够正确的配置，都会提供xml的规范文件（dtd\xsd） -->
+		<!-- 这整个文件都是Spring容器 -->
+
+
+		<bean id="clazz" class="com.qfedu.ioc.bean.Clazz"></bean>
+		<!--  通过bean将实体类配置给Spring进行管理,id表示实体类唯一标识	-->
+		<!--  autowire 通过该类设置的属性值（例如clazz，通过反射来对属性赋值）	-->
+		<bean id="student" class="com.qfedu.ioc.bean.Student" autowire="byName">
+			<constructor-arg value="10003"></constructor-arg>
+		</bean>
+
+		<bean id="productService1" class="com.qfedu.ioc.service.impl.ProductServiceImpl"></bean>
+		<bean id="productService" class="com.qfedu.ioc.service.impl.ProductServiceImpl2"></bean>
+
+		<bean id="testServlet" class="com.qfedu.ioc.servlet.TestServlet" autowire="byName"></bean>
+</beans>

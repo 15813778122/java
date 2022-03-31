@@ -1,0 +1,24 @@
+package com.vince.ex;
+
+/**
+ * 
+ * @company
+ * @author Journey
+ * @description
+ */
+
+public class ExceptionDemo {
+
+	public static void main(String[] args) {
+		div(10,2);
+	}
+	/**
+	 * ³ı·¨ÔËËã
+	 */
+	private static void div(int num1,int num2) {
+		int result = num1/num2;
+		// alt+/
+		System.out.println("result"+result);
+	}
+
+}

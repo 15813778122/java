@@ -1,0 +1,26 @@
+package com.vince;
+
+/**
+ * 
+ * @author HP
+ * String 表示一个字符串，内部使用字符数组实现，不能被继承(最终类)，不可变
+ */
+
+public class StringDemo {
+
+	public static void main(String[] args) {
+		// String 的两种赋值方式，JAVA推荐使用第一种方式
+		
+		// 1 直接赋值
+		String s1 = "粪粪";
+		// 2 使用new关键字创建对象，new:表示申请内存空间
+		//问以下代码创建了几个对象？2个
+		String s2 = new String("粪粪");
+		
+		String s3 = "粪粪";
+		
+		System.out.println(s1==s2);//false
+		System.out.println(s1==s3);//true
+	}
+
+}

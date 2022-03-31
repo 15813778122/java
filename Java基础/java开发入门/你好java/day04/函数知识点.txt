@@ -1,0 +1,8 @@
+1. void可以不用return
+2. 除了void，必须要return
+3.方法的重载
+在类中可以创建多个方法，它们具有相同的名字，但具有不同的参数和不同的定义
+返回值不能作为重载的条件
+如
+public void method(int a) {...}
+public void method(char c) {...}

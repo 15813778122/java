@@ -1,0 +1,15 @@
+package com.vince;
+
+public class DateDemo {
+
+	public static void main(String[] args) {
+		Date date = new Date();
+		// java.sql.Date sqlDate = new java.sql.Date();
+		System.out.println(date);
+		
+		// 使用两个构造方法
+		// Date(long date)参数是毫秒
+		// Date()
+	}
+
+}

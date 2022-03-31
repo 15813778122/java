@@ -1,0 +1,33 @@
+package com.vince;
+
+public class LambdaDemo {
+
+	public static void main(String[] args) {
+		IEat ieat1 = new IEatImpl();
+		ieat1.eat();
+		
+		IEat ieat2 = new IEat() {
+			public void eat() {
+				System.out.println("eat banana");
+			}
+		};
+		ieat2.eat();
+		
+		// IEat ieat3 = ()->{System.out.println("eat apple banana");};
+		IEat ieat3 = ()->System.out.println("eat apple banana");
+		ieat3.eat();
+		
+	}
+}
+
+//只有一个抽象方法的接口
+	interface IEat {
+		public void eat();
+	}
+	
+	class IEatImpl implements IEat {
+		public void eat() {
+			System.out.println("eat apple");
+		}
+	}
+

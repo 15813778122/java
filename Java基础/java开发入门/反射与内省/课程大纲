@@ -1,0 +1,9 @@
+1.什么是反射
+2.Class类
+3.通过class类获取类信息
+4.通过class调用属性或方法
+5.动态代理
+6.JavaBean的概念
+7.内省基本概念
+8.Introspector相关API
+9.单例模式优化

@@ -1,0 +1,36 @@
+package com.vince;
+
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.Writer;
+
+/**
+ * 字符流
+ * 字符输出流: Writer,对文件的操作使用子类:FileWriter
+ * 字符输出流:Reader,对文件的操作使用子类:FileReader
+ * 每次操作的单位是一个字符
+ * @author HP
+ *
+ */
+
+public class CharStreamDemo {
+
+	private static void out() {
+		File file = new File("c:\\test\\vince.txt");
+		try {
+			Writer out = new FileWriter(file);
+			out.write("xxx");
+			out.close();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		out();
+	}
+
+}

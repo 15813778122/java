@@ -1,0 +1,24 @@
+package iterator;
+
+public class ConcreteIterator implements Iterator{
+	private MyList list = null;
+	private int index;
+	public ConcreteIterator(MyList list) {
+		this.list = list;
+	}
+	public ConcreteIterator() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	@Override
+	public boolean hasNext() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+	@Override
+	public Object next() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+}

@@ -1,0 +1,23 @@
+package com.vince;
+
+import java.io.File;
+
+/**
+ * File类的使用
+ * @author HP
+ *
+ */
+
+public class FileDemo {
+
+	public static void main(String[] args) {
+		// File类表示一个文件或目录
+		// "C:\\test\\vince.txt"
+		// "C:/test/vince.txt"
+		File f1 = new File("c:"+File.separator+"test"+File.separator+"vince.txt");
+		if(!f1.exists()) {//判断文件是否存在
+			
+		}
+	}
+
+}

@@ -1,0 +1,22 @@
+package com.vince.ex;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class JDK7Demo {
+
+	public static void main(String[] args) {
+		// 1.5之后
+		// Scanner input = new Scanner(System.in);
+		// 1.5之前接受控制台输入(直接使用IO流)
+		
+		// br.close();
+		try(BufferedReader br = new BufferedReader(new InputStreamReader(System.in))){
+			String info = br.readLine();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
+}

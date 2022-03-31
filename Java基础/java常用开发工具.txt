@@ -1,0 +1,29 @@
+编辑器
+	记事本
+	Notepad++
+	EditPlus
+	UltraEdit(UE)
+	其他文本编辑器
+集成开发环境
+	JBuilder
+	Eclipse(http://www.eclipse.org/)
+	NetBeans(http://www.netbeans.org/)
+
+notepad++配置	javac/java命令
+
+javac
+
+NPP_SAVE
+javac "$(FULL_CURRENT_PATH)"
+
+java
+
+cd "$(CURRENT_DIRECTORY)"
+java "$(NAME_PART)"
+
+run
+
+NPP_SAVE
+javac "$(FULL_CURRENT_PATH)"
+cd "$(CURRENT_DIRECTORY)"
+java "$(NAME_PART)"

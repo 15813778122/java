@@ -1,0 +1,17 @@
+package com.vince;
+
+import java.util.Arrays;
+
+public class Test {
+
+	public static void main(String[] args) {
+		int[] nums = {72,123,43,13,45,23,54,32};
+		Arrays.sort(nums);
+		System.out.println(Arrays.toString(nums));
+		
+		String[] names = {"javc","tom","·Æ·Æ","·à·à"};
+		Arrays.sort(names);
+		System.out.println(Arrays.toString(names));
+	}
+
+}

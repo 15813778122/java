@@ -1,0 +1,11 @@
+package com.vince;
+
+public class DateDemo {
+
+	public static void main(String[] args) {
+		Date date = new Date();
+		// java.sql.Date sqlDate = new java.sql.Date();
+		System.out.println(date);
+	}
+
+}

@@ -1,0 +1,21 @@
+自动类型转换：
+容量小的类型自动转换成容量大的数据类型
+	        char		
+	           ↓	
+byte -> short -> int -> long
+	            
+int - - -> bouble
+long - - -> bouble
+int - - -> float
+float -> double
+
+byte，short，int，它们三者在计算时会转换成int类型
+如果把int值转换为float值，或者long转换为double值，不需要强制转换，但可能会丢失精度
+
+强制类型转换：
+容量大的类型转换成容量小的数据类型时，要加上强制转换符。
+long n = 100L;
+int i = (int)n;
+有可能造成精度降低或数据溢出，使用时要小心。
+boolean类型不能转换成任何其他数据类型。
+      	            

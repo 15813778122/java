@@ -1,0 +1,21 @@
+package com.vince;
+
+/**
+ * 打印流:很方便的进行输出
+ * 
+ * 字节打印流
+ * 
+ * 字符打印流
+ * 
+ * @author HP
+ *
+ */
+
+public class PrintStreamDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,5 @@
+system.name=ENP Manager System
+input.name=Input UserName
+input.password=Input Password
+login.success=Login Success!
+login.error=Login Error

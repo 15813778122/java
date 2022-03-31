@@ -1,0 +1,13 @@
+1.Eclipse开发环境使用入门
+2.异常处理
+3.自定义异常
+4.受检与非受检异常
+5.Eclipse之debug技术
+
+Eclipse使用方法
+window->Perspective->Reset Perspective...
+window->Show View->打开需要的窗口
+
+绑定jdk源码的目的是为了方便在eclipse种查看jdk库类的源代码
+
+提示：如果你的eclipse无法直接打开源码文件(与视频中一致，会显示出class文件编辑器，里面有个Attach Source按钮，单击这个按钮选择JDK安装目录中的src.zip文件即可关联)

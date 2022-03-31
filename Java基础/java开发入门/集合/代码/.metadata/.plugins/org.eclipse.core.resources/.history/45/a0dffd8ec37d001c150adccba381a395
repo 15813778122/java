@@ -1,0 +1,25 @@
+package com.guava;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+import org.junit.Test;
+
+public class GuavaDemo {
+	
+	@Test
+	public void testGuava1() {
+		System.out.println("test guava");
+//		List<String> list = Arrays.asList("jack","tom","lily","bin");
+//		list.add("vince");
+		List<String> list  = new ArrayList<>();
+		list.add("jack");
+		list.add("tom");
+		list.add("lily");
+		list.add("bin");
+		List<String> readList = Collections.unmodifiableList(list);
+		list.add("zizi");
+	}
+	
+}

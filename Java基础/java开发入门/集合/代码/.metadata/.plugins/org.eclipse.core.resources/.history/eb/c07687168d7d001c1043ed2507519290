@@ -1,0 +1,21 @@
+package com.vince;
+
+/**
+ * Queue接口：队列，是一种先进先出的线性数据结构(排队)
+ * LinkedList类实现了queue接口
+ * @author HP
+ *
+ */
+
+public class QueueDequeDemo {
+	
+	private static void queue() {
+		
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

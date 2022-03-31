@@ -1,0 +1,15 @@
+package com.vince;
+
+/**
+ * 序列化：由属性和属性值组成对象的过程叫序列化，反之称为反序列化
+ * @author HP
+ *
+ */
+
+public class ObjetStreamDemo {
+
+	public static void main(String[] args) {
+		
+	}
+
+}

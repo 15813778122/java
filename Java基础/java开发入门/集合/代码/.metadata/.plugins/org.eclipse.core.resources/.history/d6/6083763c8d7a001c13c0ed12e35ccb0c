@@ -1,0 +1,55 @@
+package com.vince;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Set;
+
+/**
+ * Map接口:
+ * 1.键值对存储一组对象
+ * 2.Key不能重复(唯一)，Value可以重复
+ * 3.具体的实现类：HashMap TreeMap Hashtable LinkedHashMap
+ * @author HP
+ *
+ */
+
+public class MapDemo {
+	
+	private static void hashMap() {
+		Map<Integer,String> map = new HashMap<>();
+		map.put(1, "Tom");
+		map.put(2, "lili");
+		map.put(3, "gucci");
+		map.put(4, "andy");
+		map.put(5, "cindy");
+		
+		System.out.println("size="+map.size());
+		//从Map中取值
+		System.out.println(map.get(1));// 通过key取value
+		
+		//map的遍历1 遍历Entry
+		Set<Entry<Integer,String>> entrySet = map.entrySet();
+		for(Entry e:entrySet) {
+			System.out.println(e.getKey()+"->"+e.getValue());
+		}
+		
+		//2遍历键
+		Set<Integer> keys = map.keySet();
+		for(Integer i:keys) {
+			String value = map.get(i);
+			System.out.println(i+"->"+value);
+		}
+		
+		// 3遍历值
+		Collection<String> values = map.values();
+		for(String value:values) {
+			System.out.println(values);
+		}
+	}
+
+	public static void main(String[] args) {
+
+	}
+
+}

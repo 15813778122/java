@@ -1,0 +1,36 @@
+package com.vince;
+
+public class LambdaDemo {
+
+	public static void main(String[] args) {
+		IEat ieat1 = new IEatImpl();
+		ieat1.eat();
+		
+		IEat ieat2 = new IEat() {
+			public void eat() {
+				System.out.println("eat banana");
+			}
+		};
+		ieat2.eat();
+		
+		// lambda表达式:
+		// 好处:1.代码更简洁 2.不会单独生成class文件
+		// IEat ieat3 = ()->{System.out.println("eat apple banana");};
+		// 没有参数的时候
+		IEat ieat3 = ()->System.out.println("eat apple banana");
+		ieat3.eat();
+		
+	}
+}
+
+//只有一个抽象方法的接口
+	interface IEat {
+		public void eat(String thing);
+	}
+	
+//	class IEatImpl implements IEat {
+//		public void eat(String thing) {
+//			System.out.println("eat--"+thing);
+//		}
+//	}
+

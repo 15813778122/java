@@ -1,0 +1,9 @@
+this关键字
+  调用类中的属性
+  调用类中的方法或构造方法
+  表示当前对象
+  在方法中使用this调用类中的其他方法或属性，this可以省略，this前面可以使用当前的类目.this
+public void eat(){
+  // 内部类知识点
+  System.out.println("我是"+Cat.this.getName()+",我爱吃鱼")
+}

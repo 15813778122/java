@@ -1,0 +1,5 @@
+package com.vince.decorator;
+
+public class SugarDecorator extends Decorator {
+
+}

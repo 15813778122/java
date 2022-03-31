@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<people>
+    <person personid="E01">
+        <name>Tony</name>
+        <address>10 Downing Street</address>
+        <tel>(061) 97423</tel>
+        <fax>(061) 73812</fax>
+        <email>barils@everywhere.com</email>
+    </person>
+    <person personid="E02">
+        <name>Journey</name>
+        <address>While House</address>
+        <tel>(061) 973 21312</tel>
+        <fax>(061) 731 21313</fax>
+        <email>bill@everywhere.com</email>
+    </person>
+</people>

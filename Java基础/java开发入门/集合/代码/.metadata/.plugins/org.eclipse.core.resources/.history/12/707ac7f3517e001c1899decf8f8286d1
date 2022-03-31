@@ -1,0 +1,44 @@
+package com.guava;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+
+import org.junit.Test;
+
+import com.google.common.collect.Collections2;
+import com.google.common.collect.Lists;
+
+public class GuavaDemo {
+	
+	/**
+	 * ¹ýÂËÆ÷
+	 */
+	@Test
+	public void testGuava2() {
+		List<String> list = Lists.newArrayList("jack","javascript","java","h5","php");
+		Collection<String> result = Collections2.filter(list, (e)->e.startsWith("j"));
+		result.forEach(System.out::println);
+	}
+	
+	/**
+	 * ÉèÖÃ Ö»¶Á
+	 */
+	@Test
+	public void testGuava1() {
+		System.out.println("test guava");
+//		List<String> list = Arrays.asList("jack","tom","lily","bin");
+//		list.add("vince");
+		List<String> list  = new ArrayList<>();
+		list.add("jack");
+		list.add("tom");
+		list.add("lily");
+		list.add("bin");
+//		List<String> readList = Collections.unmodifiableList(list);
+//		readList.add("zizi");
+		
+//		ImmutableList<String> iList = ImmutableList.of("jack","lily","tom","bin");
+//		iList.add("vince");
+	}
+	
+}

@@ -1,0 +1,17 @@
+主方法
+public static void main(String[] args){
+  // 代码块
+}
+public:公有的，最大的访问权限
+static: 静态的，无需创建对象
+void:表示没有返回值，无需向JVM返回结果
+main:方法名，固定的方法名
+String[] args:表示参数为字符串数组，可以在调用方法时传入参数
+
+public static void main(String[] args){
+  // 代码块
+  System.out.println(args.length); //0
+  for(String s: args){
+    System.out.println(s);// 需要在命令行输入java Test6 "liubei" "菲菲"
+  }
+}

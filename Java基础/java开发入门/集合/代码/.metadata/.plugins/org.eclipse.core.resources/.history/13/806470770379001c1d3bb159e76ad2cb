@@ -1,0 +1,48 @@
+package com.vince;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class SetDemo {
+
+	/**
+	 * HashSet
+	 * 1.实现原理，基于哈希表(HashMap)实现
+	 * 2.不允许重复，可以有一个Null元素
+	 * 3.不保证顺序恒久不变
+	 * 4.添加元素时把元素作为HashMap的key存储，HashMap的value使用一个固定的Object对象
+	 * 5.排除重复元素是通过equals来检查对象是否相同
+	 * @param args
+	 */
+	private static void hashSet() {
+		Set<String> set = new HashSet<>();
+		set.add("飞飞");
+		set.add("贝贝");
+		set.add("关关");
+		set.add("云云");
+		set.add("曹操");
+		set.add("飞飞");
+		System.out.println();
+		String[] names = set.toArray(new String[] {});
+		for(String s:names) {
+			System.out.println(s);
+		}
+		
+		Cat c1 = new Cat("miaomiao",5,1);
+		Cat c2 = new Cat("miaomiao1",4,1);
+		Cat c3 = new Cat("miaomiao2",6,1);
+		Cat c4 = new Cat("miaomiao3",5,1);
+		Set<Cat> cats = new HashSet<>();
+		cats.add(c1);
+		cats.add(c2);
+		cats.add(c3);
+		cats.add(c4);
+		cats.add(c4);
+		System.out.println(cats.size());
+	}
+	
+	public static void main(String[] args) {
+
+	}
+
+}

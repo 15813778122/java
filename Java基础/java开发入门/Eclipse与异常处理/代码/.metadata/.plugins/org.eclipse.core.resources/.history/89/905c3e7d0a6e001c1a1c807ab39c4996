@@ -1,0 +1,16 @@
+package com.vince.ex;
+
+public class UserService {
+
+	public User login(String username,String password)throws MyException{
+		if(!"admin".equals(username)) {
+			new throw MyException("用户名出错");
+		}
+		if(!"12345".equals(password)) {
+			new throw MyException("密码出错");
+		}
+		User user = new User("admin","12345",18,"男");
+		return user;
+	}
+
+}

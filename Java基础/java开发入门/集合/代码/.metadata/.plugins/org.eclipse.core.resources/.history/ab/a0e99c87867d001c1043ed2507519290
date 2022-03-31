@@ -1,0 +1,14 @@
+package com.vince;
+
+import java.util.Optional;
+
+public class OptionalDemo {
+
+	public static void main(String[] args) {
+		// 创建Optional对象的方式
+		Optional<String> optional = Optional.of("bin");
+		
+		System.out.println(optional.isPresent());
+	}
+
+}

@@ -1,0 +1,37 @@
+package iterator;
+
+/**
+ * 容器接口的具体实现类
+ * @author HP
+ *
+ */
+
+public class ConcreteAggregate implements MyList{
+	private Object[] elements;//对象数组
+	private int size;
+	private int index;
+	public ConcreteAggregate() {
+		elements = new Object[100];
+	}
+	@Override
+	public void add(Object e) {
+		elements[index++] = e;
+		size++;
+	}
+	@Override
+	public Object get(int index) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	@Override
+	public Iterator iterator() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	@Override
+	public int getSize() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+}

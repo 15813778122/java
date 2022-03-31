@@ -1,0 +1,15 @@
+package com.vince;
+
+/**
+ * 文件分割合并示例
+ * @author HP
+ *
+ */
+
+public class FileDivisionMergeDemo {
+
+	public static void main(String[] args) {
+		
+	}
+
+}
